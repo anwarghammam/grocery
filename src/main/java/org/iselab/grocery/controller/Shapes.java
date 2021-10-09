@@ -14,7 +14,7 @@ public class Shapes {
 		}
 		
 		else if(shape =="ellipse") {
-			System.out.println("area is gdsadfsa;la");
+			System.out.println("area is erberjebrbb");
 		}
 		else {
 			return 5;
