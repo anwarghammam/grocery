@@ -100,6 +100,15 @@ public class ProductController {
     
     public void searchById() {
 
+ SystemUtils.clearScreen();
+        
+        SystemUtils.printHeader("Products", "Search by Name");
+        
+        System.out.print("Name: ");
+        
+        String name = SystemUtils.getStringFromKeyboard();
+
+        print(productRepository.findByName(name));
         SystemUtils.clearScreen();
 
         SystemUtils.printHeader("Products", "Search by Id");
