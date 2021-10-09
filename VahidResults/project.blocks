@@ -1,6 +1,7 @@
 StartClass 1
 Class(org.iselab.grocery.repository.ProductRepository,N,N,Public);
 Attribute(products,java.util.List,Private,Y,N,);
+<<<<<<< Updated upstream
 Method(save$2,void,Public,N,N);
 Method(findAll$2,java.util.List,Public,N,N);
 Method(findById$2,org.iselab.grocery.domain.Product,Public,N,N);
@@ -35,12 +36,49 @@ Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByKey$2 --> fi
 Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByKey$2 --> remove,java.util.List,);
 Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByOpt$2 --> findById,org.iselab.grocery.repository.ProductRepository,);
 Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByOpt$2 --> remove,java.util.List,);
+=======
+Method(save,void,Public,N,N);
+Method(findAll,java.util.List,Public,N,N);
+Method(findById,org.iselab.grocery.domain.Product,Public,N,N);
+Method(findByName,java.util.List,Public,N,N);
+Method(removeById,org.iselab.grocery.domain.Product,Public,N,N);
+Method(removeByKey,org.iselab.grocery.domain.Product,Public,N,N);
+Method(removeByOpt,org.iselab.grocery.domain.Product,Public,N,N);
+Method(max,boolean,Public,N,N);
+Method(min,boolean,Public,N,N);
+Method(<clinit>,void,Public,Y,N);
+Method(<init>,void,Public,N,N);
+Parameter(save,org.iselab.grocery.domain.Product,);
+Parameter(findById,int,);
+Parameter(findByName,java.lang.String,);
+Parameter(removeById,int,);
+Parameter(removeByKey,int,);
+Parameter(removeByOpt,int,);
+Parameter(max,int,);
+Parameter(max,int,);
+Parameter(min,int,);
+Parameter(min,int,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,save --> add,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,findById --> getId,null,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,findByName --> getName,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,findByName --> toLowerCase,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,findByName --> contains,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,findByName --> toLowerCase,java.lang.String,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,findByName --> add,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeById --> findById,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeById --> remove,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByKey --> findById,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByKey --> remove,java.util.List,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByOpt --> findById,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.repository.ProductRepository,removeByOpt --> remove,java.util.List,);
+>>>>>>> Stashed changes
 EndClass 1
 StartClass 2
 Class(org.iselab.grocery.domain.Product,N,N,Public);
 Attribute(id,int,Private,N,N,);
 Attribute(name,java.lang.String,Private,N,N,);
 Attribute(amount,int,Private,N,N,);
+<<<<<<< Updated upstream
 Method(<init>$2,void,Public,N,N);
 Method(getId$2,int,Public,N,N);
 Method(setId$2,void,Public,N,N);
@@ -67,10 +105,39 @@ Call(METHOD,org.iselab.grocery.domain.Product,toString$2 --> append,org.iselab.g
 Call(METHOD,org.iselab.grocery.domain.Product,toString$2 --> append,org.iselab.grocery.domain.StringBuilder,);
 Call(METHOD,org.iselab.grocery.domain.Product,toString$2 --> append,org.iselab.grocery.domain.StringBuilder,);
 Call(METHOD,org.iselab.grocery.domain.Product,toString$2 --> toString,org.iselab.grocery.domain.StringBuilder,);
+=======
+Method(<init>,void,Public,N,N);
+Method(getId,int,Public,N,N);
+Method(setId,void,Public,N,N);
+Method(getName,java.lang.String,Public,N,N);
+Method(setName,void,Public,N,N);
+Method(getAmount,int,Public,N,N);
+Method(setAmount,void,Public,N,N);
+Method(toString,java.lang.String,Public,N,N);
+Parameter(setId,int,);
+Parameter(setName,java.lang.String,);
+Parameter(setAmount,int,);
+Call(METHOD,org.iselab.grocery.domain.Product,<init> --> getId,null,);
+Call(ATTRIBUTE,org.iselab.grocery.domain.Product,setId --> id,int,READ);
+Call(ATTRIBUTE,org.iselab.grocery.domain.Product,setName --> name,java.lang.String,READ);
+Call(ATTRIBUTE,org.iselab.grocery.domain.Product,setAmount --> amount,int,READ);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> append,org.iselab.grocery.domain.StringBuilder,);
+Call(METHOD,org.iselab.grocery.domain.Product,toString --> toString,org.iselab.grocery.domain.StringBuilder,);
+>>>>>>> Stashed changes
 EndClass 2
 StartClass 3
 Class(org.iselab.grocery.util.SystemUtils,N,N,Public);
 Attribute(input,java.util.Scanner,Public,Y,N,);
+<<<<<<< Updated upstream
 Method(clearScreen$2,void,Public,Y,N);
 Method(getIntFromKeyboard$2,int,Public,Y,N);
 Method(getStringFromKeyboard$2,java.lang.String,Public,Y,N);
@@ -101,17 +168,54 @@ Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader$2 --> join,null,);
 Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader$2 --> println,null,);
 Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader$2 --> join,null,);
 Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader$2 --> nCopies,null,);
+=======
+Method(clearScreen,void,Public,Y,N);
+Method(getIntFromKeyboard,int,Public,Y,N);
+Method(getStringFromKeyboard,java.lang.String,Public,Y,N);
+Method(pressEnterKeyToContinue,void,Public,Y,N);
+Method(closeScanner,void,Public,Y,N);
+Method(printHeader,void,Public,Y,N);
+Method(<clinit>,void,Public,Y,N);
+Method(<init>,void,Public,N,N);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,clearScreen --> print,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,clearScreen --> flush,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,getIntFromKeyboard --> nextInt,java.util.Scanner,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,getStringFromKeyboard --> next,java.util.Scanner,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,pressEnterKeyToContinue --> println,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,pressEnterKeyToContinue --> println,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,pressEnterKeyToContinue --> read,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,closeScanner --> close,java.util.Scanner,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> concat,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> asList,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> stream,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> stream,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> toArray,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> length,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> println,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> join,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> nCopies,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> println,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> join,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> println,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> join,null,);
+Call(METHOD,org.iselab.grocery.util.SystemUtils,printHeader --> nCopies,null,);
+>>>>>>> Stashed changes
 EndClass 3
 StartClass 4
 Class(org.iselab.grocery.util.UUIDUtils,N,N,Public);
 Attribute(sequential,int,Private,Y,N,);
+<<<<<<< Updated upstream
 Method(getId$2,int,Public,Y,N);
+=======
+Method(getId,int,Public,Y,N);
+>>>>>>> Stashed changes
 Method(<clinit>,void,Public,Y,N);
 Method(<init>,void,Public,N,N);
 EndClass 4
 StartClass 5
 Class(org.iselab.grocery.controller.ProductController,N,N,Public);
 Attribute(productRepository,org.iselab.grocery.repository.ProductRepository,Private,N,N,);
+<<<<<<< Updated upstream
 Method(<init>$2,void,Public,N,N);
 Method(print$2,void,Public,N,N);
 Method(showMenu$2,int,Public,N,N);
@@ -201,6 +305,97 @@ Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape$2 --> println,nu
 Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape$2 --> println,null,);
 Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape$2 --> println,null,);
 Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape$2 --> println,null,);
+=======
+Method(<init>,void,Public,N,N);
+Method(print,void,Public,N,N);
+Method(showMenu,int,Public,N,N);
+Method(listAll,void,Public,N,N);
+Method(remove,void,Public,N,N);
+Method(searchByName,void,Public,N,N);
+Method(searchById,void,Public,N,N);
+Method(addProduct,void,Public,N,N);
+Method(start,void,Public,N,N);
+Parameter(print,java.util.List,);
+Composition(org.iselab.grocery.repository.ProductRepository);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> format,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> format,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> getId,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> getName,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,print --> getAmount,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> print,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,showMenu --> getIntFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,listAll --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,listAll --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,listAll --> print,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,listAll --> findAll,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,listAll --> pressEnterKeyToContinue,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> print,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> getIntFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> removeById,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> getName,org.iselab.grocery.domain.Product,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> calculateShape,org.iselab.grocery.controller.Shapes,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,remove --> pressEnterKeyToContinue,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> print,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> getStringFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> print,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> findByName,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchByName --> pressEnterKeyToContinue,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> print,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> getIntFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> findById,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> print,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> asList,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,searchById --> pressEnterKeyToContinue,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> print,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> setName,org.iselab.grocery.domain.Product,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> getStringFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> print,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> setAmount,org.iselab.grocery.domain.Product,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> getIntFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,addProduct --> save,org.iselab.grocery.repository.ProductRepository,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> showMenu,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> addProduct,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> searchByName,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> searchById,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> remove,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> listAll,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.controller.ProductController,start --> showMenu,org.iselab.grocery.controller.ProductController,);
+EndClass 5
+StartClass 6
+Class(org.iselab.grocery.controller.Shapes,N,N,Public);
+Method(calculateShape,int,Public,N,N);
+Method(<init>,void,Public,N,N);
+Parameter(calculateShape,java.lang.String,);
+Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape --> println,null,);
+Call(METHOD,org.iselab.grocery.controller.Shapes,calculateShape --> println,null,);
+>>>>>>> Stashed changes
 EndClass 6
 StartClass 7
 Class(org.iselab.grocery.controller.Myclass,N,N,Public);
@@ -208,6 +403,7 @@ Method(<init>,void,Public,N,N);
 EndClass 7
 StartClass 8
 Class(org.iselab.grocery.MainClass,N,N,Public);
+<<<<<<< Updated upstream
 Method(main$2,void,Public,Y,N);
 Method(showMenu$2,int,Public,N,N);
 Method(run$2,void,Public,N,N);
@@ -243,10 +439,48 @@ SubClass(org.iselab.grocery.domain.Manager);
 SuperClass(org.iselab.grocery.domain.Person);
 Generalization(org.iselab.grocery.domain.Person);
 Call(METHOD,org.iselab.grocery.domain.Employee,<init>$2 --> <init>$2,org.iselab.grocery.domain.Person,);
+=======
+Method(main,void,Public,Y,N);
+Method(showMenu,int,Public,N,N);
+Method(run,void,Public,N,N);
+Method(<init>,void,Public,N,N);
+Parameter(main,java.lang.String[],);
+Call(METHOD,org.iselab.grocery.MainClass,main --> run,org.iselab.grocery.MainClass,);
+Call(METHOD,org.iselab.grocery.MainClass,main --> closeScanner,null,);
+Call(METHOD,org.iselab.grocery.MainClass,showMenu --> clearScreen,null,);
+Call(METHOD,org.iselab.grocery.MainClass,showMenu --> printHeader,null,);
+Call(METHOD,org.iselab.grocery.MainClass,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.MainClass,showMenu --> println,null,);
+Call(METHOD,org.iselab.grocery.MainClass,showMenu --> print,null,);
+Call(METHOD,org.iselab.grocery.MainClass,showMenu --> getIntFromKeyboard,null,);
+Call(METHOD,org.iselab.grocery.MainClass,run --> showMenu,org.iselab.grocery.MainClass,);
+Call(METHOD,org.iselab.grocery.MainClass,run --> start,org.iselab.grocery.controller.ProductController,);
+Call(METHOD,org.iselab.grocery.MainClass,run --> showMenu,org.iselab.grocery.MainClass,);
+Call(METHOD,org.iselab.grocery.MainClass,run --> println,null,);
+EndClass 8
+StartClass 9
+Class(org.iselab.grocery.domain.Manager,N,N,Public);
+Method(<init>,void,Public,N,N);
+Parameter(<init>,java.lang.String,);
+SuperClass(org.iselab.grocery.domain.Employee);
+SuperClass(org.iselab.grocery.domain.Person);
+Generalization(org.iselab.grocery.domain.Employee);
+Call(METHOD,org.iselab.grocery.domain.Manager,<init> --> <init>,org.iselab.grocery.domain.Employee,);
+EndClass 9
+StartClass 10
+Class(org.iselab.grocery.domain.Employee,N,N,Public);
+Method(<init>,void,Public,N,N);
+Parameter(<init>,java.lang.String,);
+SubClass(org.iselab.grocery.domain.Manager);
+SuperClass(org.iselab.grocery.domain.Person);
+Generalization(org.iselab.grocery.domain.Person);
+Call(METHOD,org.iselab.grocery.domain.Employee,<init> --> <init>,org.iselab.grocery.domain.Person,);
+>>>>>>> Stashed changes
 EndClass 10
 StartClass 11
 Class(org.iselab.grocery.domain.Person,N,N,Public);
 Attribute(name,java.lang.String,Private,N,N,);
+<<<<<<< Updated upstream
 Method(<init>$2,void,Public,N,N);
 Method(sayNyName$2,java.lang.String,Public,N,N);
 Parameter(<init>$2,java.lang.String,);
@@ -262,4 +496,21 @@ Parameter(<init>$2,java.lang.String,);
 SuperClass(org.iselab.grocery.domain.Person);
 Generalization(org.iselab.grocery.domain.Person);
 Call(METHOD,org.iselab.grocery.domain.Customer,<init>$2 --> <init>$2,org.iselab.grocery.domain.Person,);
+=======
+Method(<init>,void,Public,N,N);
+Method(sayNyName,java.lang.String,Public,N,N);
+Parameter(<init>,java.lang.String,);
+SubClass(org.iselab.grocery.domain.Manager);
+SubClass(org.iselab.grocery.domain.Customer);
+SubClass(org.iselab.grocery.domain.Employee);
+Call(ATTRIBUTE,org.iselab.grocery.domain.Person,<init> --> name,java.lang.String,READ);
+EndClass 11
+StartClass 12
+Class(org.iselab.grocery.domain.Customer,N,N,Public);
+Method(<init>,void,Public,N,N);
+Parameter(<init>,java.lang.String,);
+SuperClass(org.iselab.grocery.domain.Person);
+Generalization(org.iselab.grocery.domain.Person);
+Call(METHOD,org.iselab.grocery.domain.Customer,<init> --> <init>,org.iselab.grocery.domain.Person,);
+>>>>>>> Stashed changes
 EndClass 12
