@@ -131,7 +131,7 @@ public class ProductController {
         System.out.print("Name: ");
         product.setName(SystemUtils.getStringFromKeyboard());
 
-        System.out.print("Amount is: ");
+        System.out.print("Amount is:   ");
         product.setAmount(SystemUtils.getIntFromKeyboard());
 
         productRepository.save(product);
