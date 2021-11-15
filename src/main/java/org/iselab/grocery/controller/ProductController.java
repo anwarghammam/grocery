@@ -127,7 +127,7 @@ public class ProductController {
         
         Product product = new Product();
 
-        System.out.print("Name: ");
+        System.out.print("Name : ");
         product.setName(SystemUtils.getStringFromKeyboard());
 
         System.out.print("Amount: ");
