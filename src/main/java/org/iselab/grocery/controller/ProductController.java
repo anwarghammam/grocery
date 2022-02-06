@@ -100,6 +100,7 @@ public class ProductController {
     
     public void searchById() {
 
+
         SystemUtils.clearScreen();
 
         SystemUtils.printHeader("Products", "Search by Id");
@@ -130,7 +131,11 @@ public class ProductController {
         System.out.print("Name: ");
         product.setName(SystemUtils.getStringFromKeyboard());
 
+<<<<<<< HEAD
         System.out.print("Amount  is: ");
+=======
+        System.out.print("Amount is in total:   ");
+>>>>>>> 44093cb64b267ddd96c169b3b7c6d540322e5674
         product.setAmount(SystemUtils.getIntFromKeyboard());
 
         productRepository.save(product);
