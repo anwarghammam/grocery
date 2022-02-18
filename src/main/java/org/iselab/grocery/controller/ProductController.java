@@ -94,6 +94,18 @@ public class ProductController {
         String name = SystemUtils.getStringFromKeyboard();
 
         print(productRepository.findByName(name));
+
+        Shapes circle = new Circle(4,"circle");
+         circle.getShape();
+         double area = circle.calculateArea(4);
+         System.out.println("this is a useless thing for test: "+ area);
+         SystemUtils.pressEnterKeyToContinue();
+
+
+         Shapes rectangle = new Rectangle("Rectangle",6,7);
+         rectangle.getShape();
+         double areaRec = rectangle.calculateArea(4,6);
+         System.out.println("this is a useless thing for test: "+ areaRec);
         
         SystemUtils.pressEnterKeyToContinue();
     }
